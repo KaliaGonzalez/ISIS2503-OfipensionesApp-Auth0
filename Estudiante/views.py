@@ -6,7 +6,7 @@ from .forms import EstudianteForm
 from .logic.variable_logic import get_estudiantes, get_estudiante, create_estudiante
 from django.contrib.auth.decorators import login_required
 # Descomentar cuando se cree el archivo monitoring/auth0backend.py
-#from monitoring.auth0backend import getRole
+from monitoring.auth0backend import getRole
 
 @login_required
 def estudiante_list(request):
