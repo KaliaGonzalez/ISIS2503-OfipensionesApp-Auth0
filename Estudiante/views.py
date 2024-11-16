@@ -11,7 +11,7 @@ from monitoring.auth0backend import getRole
 @login_required
 def estudiante_list(request):
     role = getRole(request)
-    if role == "Administrador":
+    if role == "Administrador" or "Hacker":
         estudiantes = get_estudiantes()
         context = {
             'estudiante_list': estudiantes
