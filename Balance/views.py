@@ -14,7 +14,7 @@ def balance_list(request):
     }
     return render(request, 'Balance/balances.html', context)
 
-def measurement_create(request):
+def balance_create(request):
     if request.method == 'POST':
         form = BalanceForm(request.POST)
         if form.is_valid():
