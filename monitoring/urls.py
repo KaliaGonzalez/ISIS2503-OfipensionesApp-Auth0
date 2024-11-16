@@ -5,8 +5,8 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
-    path('', include('estudiantes.urls')),
-    path('', include('balances.urls')), 
+    path('', include('Estudiante.urls')),
+    path('', include('Balance.urls')), 
     path(r'', include('django.contrib.auth.urls')),
     path(r'', include('social_django.urls')),
 ]
