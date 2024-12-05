@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'Balance',
     'Estudiante', 
     'social_django',
+    'balances.apps.BalanceConfig'
 ]
 
 MIDDLEWARE = [
